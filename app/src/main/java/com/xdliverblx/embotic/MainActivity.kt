@@ -1,5 +1,6 @@
 package com.xdliverblx.embotic
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
@@ -13,7 +14,21 @@ class MainActivity : AppCompatActivity() {
     lateinit var webView: WebView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        if (resources.getBoolean(R.bool.isTablet)) {
+            // This is a tablet, so use the tablet layout
+            setContentView(R.layout.activity_tablet)
+        } else {
+            // This is not a tablet, use the default layout
+            setContentView(R.layout.activity_main)
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
+
+        // Check if the device is a tablet and set screen orientation accordingly
+        val isTablet = resources.getBoolean(R.bool.isTablet)
+        if (isTablet) {
+            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+        }
+
         webView = findViewById(R.id.webView)
         webView.setInitialScale(1)
         webView.getSettings().setLoadWithOverviewMode(true)
