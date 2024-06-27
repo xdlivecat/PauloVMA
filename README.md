@@ -6,12 +6,12 @@ Prebuilt releases of the app can be found on Google Play:
 
 <a href='https://play.google.com/store/apps/details?id=com.xdliverblx.embotic&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="250" height="100"/></a>
 
-or [under GitHub Releases](https://github.com/xdlivecat/EmboticApp/releases).
-## Note: New versions of the app are released earlier on [Releases](https://github.com/xdlivecat/EmboticApp/releases) than on Google Play due to review times.
+or [under GitHub Releases](https://github.com/Embotic-xyz/EmboticApp/releases).
+## Note: New versions of the app are released earlier on [Releases](https://github.com/Embotic-xyz/EmboticApp/releases) than on Google Play due to review times.
 
 # Issue tracking
 
-If you find issues with the app or source code you can create an issue [here.](https://github.com/xdlivecat/EmboticApp/issues)
+If you find issues with the app or source code you can create an issue [here.](https://github.com/Embotic-xyz/EmboticApp/issues)
 
 # Contributions
 
