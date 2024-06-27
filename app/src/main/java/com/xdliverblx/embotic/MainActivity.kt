@@ -16,15 +16,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         webView = findViewById(R.id.webview)
         webView.setInitialScale(1)
+        webView.getSettings().setLoadWithOverviewMode(true)
+        webView.getSettings().setUseWideViewPort(true)
+        webView.setScrollBarStyle(WebView.SCROLLBARS_INSIDE_OVERLAY)
+        webView.setScrollbarFadingEnabled(false)
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
-        webView.settings.allowFileAccess = true
         webView.settings.allowContentAccess = true
+        webView.settings.allowFileAccess = true
+        webView.settings.builtInZoomControls = true
+        webView.settings.displayZoomControls = false
+        webView.settings.setSupportZoom(true)
         webView.isHorizontalScrollBarEnabled = false
         webView.isClickable = true
         webView.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(
-                view: WebView?,
+                view: WebView,
                 url: String): Boolean {
                 view?.loadUrl(url)
                 return true
