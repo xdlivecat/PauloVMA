@@ -13,8 +13,8 @@ android {
         applicationId = "com.xdliverblx.embotic"
         minSdk = 24
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.11"
+        versionCode = 4
+        versionName = "1.12"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
