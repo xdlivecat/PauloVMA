@@ -1,4 +1,4 @@
-package com.xdliverblx.embotic
+package com.xdliverblx.paulovm
 
 import android.content.ContentValues.TAG
 import android.content.pm.ActivityInfo
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
         }
-        webView.loadUrl("https://dash.embotic.xyz")
+        webView.loadUrl("https://paulovm.com")
     }
 
     override fun onRequestPermissionsResult(

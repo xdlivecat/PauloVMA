@@ -6,15 +6,15 @@ plugins {
 }
 
 android {
-    namespace = "com.xdliverblx.embotic"
-    compileSdk = 34
+    namespace = "com.xdliverblx.paulovm"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.xdliverblx.embotic"
+        applicationId = "com.xdliverblx.paulovm"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 4
-        versionName = "1.12"
+        targetSdk = 35
+        versionCode = 43
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -39,11 +39,6 @@ android {
 
 dependencies {
 
-    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
-    implementation("com.google.firebase:firebase-messaging:24.0.0")
-    implementation("com.google.firebase:firebase-messaging-ktx:24.0.0")
-    implementation("com.google.firebase:firebase-analytics-ktx:22.0.2")
-    implementation("com.google.firebase:firebase-analytics:22.0.2")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

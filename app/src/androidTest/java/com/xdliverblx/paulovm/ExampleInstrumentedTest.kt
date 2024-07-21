@@ -1,4 +1,4 @@
-package com.xdliverblx.embotic
+package com.xdliverblx.paulovm
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
