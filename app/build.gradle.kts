@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("com.google.gms.google-services")
 
 }
 
@@ -13,8 +12,8 @@ android {
         applicationId = "com.xdliverblx.paulovm"
         minSdk = 24
         targetSdk = 35
-        versionCode = 43
-        versionName = "1.0"
+        versionCode = 44
+        versionName = "1.01"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
